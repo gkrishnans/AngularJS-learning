@@ -2,4 +2,5 @@
 
 <p>server id is {{serverID}}</p>
 
-<button class="btn btn-primary">Add Server</button>
+<button class="btn btn-primary" (click)="onServerCreation()">Add Server</button>
+<p [innerText]="serverCreationStatus"></p>
