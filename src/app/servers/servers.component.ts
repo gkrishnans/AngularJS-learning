@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
+  serverID : number = 100
+
+  getServerID(){
+    return this.serverID
+  }
+
   constructor() { }
 
   ngOnInit(): void {
