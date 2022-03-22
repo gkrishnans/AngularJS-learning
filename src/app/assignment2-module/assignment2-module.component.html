@@ -1,0 +1,11 @@
+<label>Name:</label>
+<div class="row">
+    <input
+    type="text"
+    (input)="onReadingInput($event)"
+    [(ngModel)]="name"
+>
+
+<p>your name is {{name}}</p>
+<button (click)="onclick()" [disabled]="name === ''" >click me</button>
+</div>
